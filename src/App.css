@@ -1,0 +1,143 @@
+/* Root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #766f64; /* Deep navy */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #f5f5f5; /* Very light gray */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #f08a5d; /* Warm coral */
+}
+
+.nav-link {
+  color: #f5f5f5; /* Very light gray */
+  margin-right: 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6a0572; /* Rich purple */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar .nav-link.active {
+  color: #f08a5d; /* Warm coral */
+}
+
+/* Appointment form styles */
+.card.flex.form-control {
+  padding: 0.4rem;
+  background-color: #ffffff; /* Change the background color to white */
+  border: 1px solid #ced4da; /* Add border similar to other input fields */
+  border-radius: 0.25rem; /* Make the corners rounded */
+}
+
+/* MultiSelect styling */
+.p-multiselect {
+  background-color: #ffffff !important; /* Ensure the dropdown is not transparent */
+  width: 100%; /* Make the MultiSelect input full-width */
+  display: inline-block; /* Ensure inline block display */
+  vertical-align: middle; /* Vertically align with the rest of the form controls */
+}
+
+.p-multiselect-label-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping of selected items */
+  overflow-x: auto; /* Allow horizontal scrolling for selected items */
+  white-space: nowrap; /* Prevent line break within the selected items */
+}
+
+.p-multiselect-label {
+  display: inline-block;
+  vertical-align: middle; /* Vertically center selected items */
+  margin-right: 0.5rem; /* Space between selected items */
+}
+
+.p-multiselect-panel {
+  background-color: #ffffff; /* Background color for the dropdown items */
+  border: 1px solid #ced4da; /* Add border to the dropdown panel */
+}
+
+.p-multiselect-item {
+  padding: 0.5rem; /* Adjust padding for dropdown items */
+  color: #495057; /* Text color */
+}
+
+.p-multiselect-item:hover {
+  background-color: #f8f9fa; /* Hover background color */
+  color: #000000; /* Hover text color */
+}
+
+.p-multiselect-token {
+  background-color: #e9ecef; /* Background color for selected items */
+  border-radius: 0.25rem; /* Rounded corners for selected items */
+  padding: 0.2rem 0.4rem; /* Padding inside selected items */
+  margin: 0 0.2rem 0 0; /* Adjust margin to ensure proper spacing */
+  display: inline-flex; /* Ensure tokens are inline */
+  align-items: center; /* Vertically center tokens */
+}
